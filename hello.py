@@ -11,3 +11,6 @@ print(f"Wow! {age} is old! You are so very old!")
 
 if age > 25:
     print("You are old")
+    #This statement calls the person old if theyre older than 25
+if age >= 13 or age <= 19:
+    print("You are a teenager")
