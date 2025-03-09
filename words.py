@@ -10,9 +10,10 @@ bible = input("What is the first book of the Bible? Genesis, Exodus, Numbers or 
 correct = ["a","a)", "genesis", "a) genesis"]
 incorrect = ["b", "b)", "exodus", "b) exodus", "c", "c)", "numbers", "c) numbers", "leviticus", "d) leviticus"]
 
-if bible in correct.lower().strip():
+if bible.lower().strip() in correct:
     print("You are correct")
 
-else:
+elif bible.lower().strip() in incorrect:
     print("That is wrong")
-    
+else:
+    print("invalid")
